@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fake Product Detection System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="g1.css"> <!-- Linked CSS file -->
+</head>
+<body>
+
+  <!-- 🔗 Navigation -->
+  <nav>
+    <a href="#about">ℹ️ About</a>
+    <a href="#how-it-works">🛡️ How it Works</a>
+    <a href="#contact">📞 Contact Us</a>
+    <a href="#faqs">🧠 FAQs</a>
+  </nav>
+
+  
+ <!-- ℹ️ About Section -->
+<section id="about" class="info-section">
+  <h2>ℹ️ About</h2>
+  <p>Our mission is to combat the growing issue of counterfeit products through advanced barcode verification technology. By ensuring barcode authenticity, we help protect consumers and uphold the integrity of trusted brands.</p>
+  <p>All product data is sourced directly from verified manufacturers and official brand partners. If you wish to confirm the legitimacy of our system, you are welcome to contact these brands directly—they can verify our collaboration and the authenticity of the data we use.</p>
+</section>
+
+
+  <!-- 🛡️ How it Works Section -->
+  <section id="how-it-works" class="info-section">
+    <h2>🛡️ How it Works</h2>
+    <ol>
+      <li>📷 Upload or scan a barcode image.</li>
+      <li>🔍 Our system reads the barcode and checks it against a verified product database.</li>
+      <li>✅ If it matches, the product is marked as original. Otherwise, it’s flagged as suspicious.</li>
+      <li>📝 If the barcode is blurry or unreadable, please manually enter the barcode number for verification.</li>
+    </ol>
+  </section>
+
+  <!-- 📞 Contact Us Section -->
+  <section id="contact" class="info-section">
+    <h2>📞 Contact Us</h2>
+    <form onsubmit="event.preventDefault(); alert('Message Sent!');">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- 🧠 FAQs Section -->
+  <section id="faqs" class="info-section">
+    <h2>🧠 FAQs</h2>
+    <div class="faq">
+      <strong>❓ What is a fake barcode?</strong>
+      <p>A fake barcode may look real but doesn't match any valid product in a genuine manufacturer's database.</p>
+    </div>
+    <div class="faq">
+      <strong>❓ Can this detect all products?</strong>
+      <p>Our system currently detects products in our verified database. We're constantly expanding to support more brands.</p>
+    </div>
+  </section>
+
+</body>
+</html>

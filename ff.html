@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Barcode Scanner & Product Verifier</title>
+  <link rel="stylesheet" href="ff.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+</head>
+<body>
+
+  <h1 class="main-heading">🕵️‍♂️ Fake Product Detector</h1>
+
+  <div class="container">
+    
+    <!-- Image Upload & Scan -->
+    <input type="file" id="barcodeImage" accept="image/*">
+    <img id="preview" src="" alt="Preview" />
+    <button onclick="scanBarcode()">Scan Barcode from Image</button>
+
+    <!-- OR Divider -->
+    <div class="divider">OR</div>
+
+    <!-- Manual Entry -->
+    <input type="text" id="barcodeInput" placeholder="Enter barcode number manually">
+    <button onclick="checkProduct()">Check Product</button>
+
+    <!-- Result Display -->
+    <canvas id="barcodeCanvas" style="display:none;"></canvas>
+    <div id="result"></div>
+
+  </div>
+
+  <script src="ff.js"></script>
+  <!-- ℹ️ General Info Link -->
+  <footer style="text-align:center; margin-top: 50px;">
+    <a href="g1cop.html" style="text-decoration:none; color:#000; font-size:1.1rem; margin-left: 40px;">
+      ℹ️ General Info
+    </a>
+  </footer>
+</body>
+</html>

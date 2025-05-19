@@ -1,0 +1,105 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(145deg, #e0f2f1, #ffffff);
+}
+
+/* Navigation Bar */
+nav {
+  background: #4CAF50;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e0f2f1;
+}
+
+/* Section Styling */
+.info-section {
+  margin: 60px auto;
+  padding: 30px;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  backdrop-filter: blur(10px);
+}
+
+.info-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.info-section p,
+.info-section li {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  margin: 10px 0;
+}
+
+.info-section ol {
+  padding-left: 20px;
+}
+
+/* Contact Form */
+.info-section form input,
+.info-section form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.info-section form button {
+  background: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.info-section form button:hover {
+  background: #43a047;
+}
+
+/* FAQs */
+.faq strong {
+  display: block;
+  margin-top: 15px;
+  color: #000;
+}
+
+.faq p {
+  margin-left: 10px;
+}
